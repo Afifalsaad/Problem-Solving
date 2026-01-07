@@ -22,34 +22,28 @@ const result = countVowels("javaScript");
 // console.log(result);
 
 // Problem 3: Check for Palindrome
-// Write a function that checks if a string is a palindrome (reads the same forward and backward).
 
-// Example:
-
-// Input: "madam"
-// Output: true
-// Input: "hello"
-// Output: false
 function palindrome(str) {
   const copied = [...str];
   const reversed = copied.reverse().join("");
   if (str.toLowerCase() === reversed.toLowerCase()) {
     return true;
   } else {
-    return false
+    return false;
   }
 }
 
-const result1 = palindrome("Civic");
-console.log(result1)
+const isPalindrome = palindrome("Civic");
+// console.log(isPalindrome);
 
 // Problem 4: Find the Maximum Number
-// Write a function that takes an array of numbers and returns the largest number.
 
-// Example:
-
-// Input: [5, 1, 9, 3]
-// Output: 9
+function MaxNum(arr) {
+  const input = arr;
+  return Math.max(...input);
+}
+const num = MaxNum([1, 2, 3, 4, 5, 50, 5000]);
+// console.log(num);
 
 // Problem 5: Remove Duplicates from an Array
 // Write a function that removes all duplicate numbers from an array.
@@ -58,6 +52,15 @@ console.log(result1)
 
 // Input: [1, 2, 2, 3, 4, 4]
 // Output: [1, 2, 3, 4]
+
+function removeDuplicate(arr) {
+  let input = arr;
+  let checkDuplicate = new Set(input);
+  return [...checkDuplicate];
+}
+
+const output = removeDuplicate([10, 10, 20, 20, 30, 30, 40, 40, 50, 50]);
+console.log(output);
 
 // Problem 6: Sum of All Numbers in an Array
 // Write a function that returns the sum of all numbers in an array.

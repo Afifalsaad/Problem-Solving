@@ -46,12 +46,6 @@ const num = MaxNum([1, 2, 3, 4, 5, 50, 5000]);
 // console.log(num);
 
 // Problem 5: Remove Duplicates from an Array
-// Write a function that removes all duplicate numbers from an array.
-
-// Example:
-
-// Input: [1, 2, 2, 3, 4, 4]
-// Output: [1, 2, 3, 4]
 
 function removeDuplicate(arr) {
   let input = arr;
@@ -60,15 +54,20 @@ function removeDuplicate(arr) {
 }
 
 const output = removeDuplicate([10, 10, 20, 20, 30, 30, 40, 40, 50, 50]);
-console.log(output);
+// console.log(output);
 
 // Problem 6: Sum of All Numbers in an Array
-// Write a function that returns the sum of all numbers in an array.
 
-// Example:
+function sumOfNum(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  return total;
+}
 
-// Input: [1, 2, 3, 4]
-// Output: 10
+const sum = sumOfNum([1, 2, 3, 4 , 10 , 20 , 100]);
+// console.log(sum);
 
 // Problem 7: Find Even Numbers in an Array
 // Write a function that returns all even numbers from a given array.

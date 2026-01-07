@@ -1,8 +1,12 @@
 // Problem 1: Reverse a String
 
-const str = "hello world";
-const copiedInput = [...str];
-const reversedResult = copiedInput.reverse().join("");
+function reverseString(str) {
+  const copiedInput = [...str];
+  return (reversedResult = copiedInput.reverse().join(""));
+}
+
+const reversed = reverseString("hello  world");
+console.log(reversed);
 
 // Problem 2: Count Vowels in a String
 
@@ -130,4 +134,4 @@ function pingPong() {
   }
 }
 
-pingPong();
+// pingPong();

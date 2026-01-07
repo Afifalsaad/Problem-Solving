@@ -1,7 +1,7 @@
 // Problem 1: Reverse a String
 
-const input = "hello world";
-const copiedInput = [...input];
+const str = "hello world";
+const copiedInput = [...str];
 const reversedResult = copiedInput.reverse().join("");
 
 // Problem 2: Count Vowels in a String
@@ -84,7 +84,7 @@ function findEvenNumbers(arr) {
 const evenNumbers = findEvenNumbers([
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
 ]);
-console.log(evenNumbers);
+// console.log(evenNumbers);
 
 // Problem 8: Capitalize First Letter of Each Word
 // Write a function that capitalizes the first letter of each word in a string.
@@ -93,6 +93,19 @@ console.log(evenNumbers);
 
 // Input: "hello world"
 // Output: "Hello World"
+
+function capitalizeWord(str) {
+  const words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+  }
+  return words.join(" ");
+}
+
+const theWord = capitalizeWord(
+  "hello world is the first word of my javascript code"
+);
+console.log(theWord);
 
 // Problem 9: Find the Factorial of a Number
 // Write a function that calculates the factorial of a number using a loop.

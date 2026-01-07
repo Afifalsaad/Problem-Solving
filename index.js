@@ -87,12 +87,6 @@ const evenNumbers = findEvenNumbers([
 // console.log(evenNumbers);
 
 // Problem 8: Capitalize First Letter of Each Word
-// Write a function that capitalizes the first letter of each word in a string.
-
-// Example:
-
-// Input: "hello world"
-// Output: "Hello World"
 
 function capitalizeWord(str) {
   const words = str.split(" ");
@@ -105,7 +99,7 @@ function capitalizeWord(str) {
 const theWord = capitalizeWord(
   "hello world is the first word of my javascript code"
 );
-console.log(theWord);
+// console.log(theWord);
 
 // Problem 9: Find the Factorial of a Number
 // Write a function that calculates the factorial of a number using a loop.
@@ -114,6 +108,17 @@ console.log(theWord);
 
 // Input: 5
 // Output: 120
+
+function factorialOfaNumber(num) {
+  let res = 1;
+  for (let i = 1; i <= num; i++) {
+    res *= i;
+  }
+  return res;
+}
+
+const factorial = factorialOfaNumber(6);
+console.log(factorial);
 
 // Problem 10: PingPong Challenge
 // Write a function that prints numbers from 1 to 20.

@@ -66,16 +66,25 @@ function sumOfNum(arr) {
   return total;
 }
 
-const sum = sumOfNum([1, 2, 3, 4 , 10 , 20 , 100]);
+const sum = sumOfNum([1, 2, 3, 4, 10, 20, 100, 200]);
 // console.log(sum);
 
 // Problem 7: Find Even Numbers in an Array
-// Write a function that returns all even numbers from a given array.
 
-// Example:
+function findEvenNumbers(arr) {
+  const even = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      even.push(arr[i]);
+    }
+  }
+  return even;
+}
 
-// Input: [1, 2, 3, 4, 5, 6]
-// Output: [2, 4, 6]
+const evenNumbers = findEvenNumbers([
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
+]);
+console.log(evenNumbers);
 
 // Problem 8: Capitalize First Letter of Each Word
 // Write a function that capitalizes the first letter of each word in a string.
